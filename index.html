@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Business Services">
+    <meta name="keywords" content="Business, Services, Professional">
+    <meta name="author" content="Your Company Name">
+    <title>Your Business Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('your-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        header a {
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        header a:hover {
+            background: #e55b00;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .services, .portfolio {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .service-item, .portfolio-item {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover, .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonials {
+            background: #333;
+            color: white;
+            padding: 2rem;
+        }
+
+        .testimonials p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .services, .portfolio {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Your Business Name</h1>
+            <p>Professional Solutions for Your Business Needs</p>
+            <a href="#services">Explore Our Services</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a company that provides top-notch services for your business. Our team of experts is dedicated to delivering the best results.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Service 1</h3>
+                <p>Description of the service goes here.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 2</h3>
+                <p>Description of the service goes here.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 3</h3>
+                <p>Description of the service goes here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <h3>Project 1: E-commerce Website</h3>
+                <p>Designed and developed a fully functional e-commerce website for a local retailer, increasing their online sales by 40%.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2: Mobile App Development</h3>
+                <p>Created a mobile application for a startup that streamlined their services, enhancing customer engagement and feedback.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 3: Digital Marketing Campaign</h3>
+                <p>Implemented a comprehensive digital marketing strategy for a client, resulting in a 30% increase in website traffic and brand awareness.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 4: Branding and Identity</h3>
+                <p>Developed a complete branding package for a new business, including logo design, business cards, and social media branding.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 5: SEO Optimization</h3>
+                <p>Optimized a client’s website for search engines, significantly improving their visibility and search ranking within three months.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 6: Website Redesign</h3>
+                <p>Revamped an outdated website for a non-profit organization, enhancing user experience and increasing donations by 25%.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"This company is amazing! They provided excellent service and support."</p>
+        <p>"Professional and reliable. Highly recommend!"</p>
+        <p>"Outstanding results! Couldn't be happier."</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Business Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
